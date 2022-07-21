@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OddsMatrixConnector.BL\OddsMatrixConnector.BL.csproj">
+      <Project>{AC9E7940-A5BE-40D9-A9E9-1992570B504D}</Project>
+      <Name>OddsMatrixConnector.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SEPC-Connector\SEPC-Connector.csproj">
+      <Project>{4e576754-5c12-40f0-90c8-3add8ea28095}</Project>
+      <Name>SEPC-Connector</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,3 +18,13 @@ C:\Users\kacosta\Documents\GitHub\MoverV2\SEPC-Connector\bin\Debug\log4net.dll
 C:\Users\kacosta\Documents\GitHub\MoverV2\SEPC-Connector\bin\Debug\Newtonsoft.Json.dll
 C:\Users\kacosta\Documents\GitHub\MoverV2\SEPC-Connector\bin\Debug\Newtonsoft.Json.xml
 C:\Users\kacosta\Documents\GitHub\MoverV2\SEPC-Connector\obj\Debug\SEPC-Connector.csproj.CopyComplete
+C:\Users\Administrator\Documents\GitHub\OddsMatrixConnector\SEPC-Connector\bin\Debug\SEPC-Connector.dll
+C:\Users\Administrator\Documents\GitHub\OddsMatrixConnector\SEPC-Connector\bin\Debug\SEPC-Connector.pdb
+C:\Users\Administrator\Documents\GitHub\OddsMatrixConnector\SEPC-Connector\bin\Debug\log4net.dll
+C:\Users\Administrator\Documents\GitHub\OddsMatrixConnector\SEPC-Connector\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\GitHub\OddsMatrixConnector\SEPC-Connector\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\GitHub\OddsMatrixConnector\SEPC-Connector\obj\Debug\SEPC-Connector.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\OddsMatrixConnector\SEPC-Connector\obj\Debug\SEPC-Connector.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\OddsMatrixConnector\SEPC-Connector\obj\Debug\SEPC-Connector.csproj.CopyComplete
+C:\Users\Administrator\Documents\GitHub\OddsMatrixConnector\SEPC-Connector\obj\Debug\SEPC-Connector.dll
+C:\Users\Administrator\Documents\GitHub\OddsMatrixConnector\SEPC-Connector\obj\Debug\SEPC-Connector.pdb

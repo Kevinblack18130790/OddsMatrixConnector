@@ -5,6 +5,16 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddsMatrixConnector.SyncConsole", "OddsMatrixConnector.SyncConsole\OddsMatrixConnector.SyncConsole.csproj", "{B10C190A-17DD-4C5D-9F5C-9785FE6CACCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEPC-Connector", "SEPC-Connector\SEPC-Connector.csproj", "{4E576754-5C12-40F0-90C8-3ADD8EA28095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddsMatrixConnector.BL", "OddsMatrixConnector.BL\OddsMatrixConnector.BL.csproj", "{AC9E7940-A5BE-40D9-A9E9-1992570B504D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddsMatrixConnector.DB", "OddsMatrixConnector.DB\OddsMatrixConnector.DB.csproj", "{E3AF7B9B-3ED3-40B6-9B96-4AB7399CC344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddsMatrixConnector.Entities", "OddsMatrixConnector.Entities\OddsMatrixConnector.Entities.csproj", "{DCAA6BAF-F0C7-43AE-B046-7257CF337F52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddsMatrixConnector.API", "OddsMatrixConnector.API\OddsMatrixConnector.API.csproj", "{9B8866FB-30A0-410C-8F12-2ABAE1A800E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{B10C190A-17DD-4C5D-9F5C-9785FE6CACCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B10C190A-17DD-4C5D-9F5C-9785FE6CACCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B10C190A-17DD-4C5D-9F5C-9785FE6CACCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E576754-5C12-40F0-90C8-3ADD8EA28095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E576754-5C12-40F0-90C8-3ADD8EA28095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E576754-5C12-40F0-90C8-3ADD8EA28095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E576754-5C12-40F0-90C8-3ADD8EA28095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC9E7940-A5BE-40D9-A9E9-1992570B504D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC9E7940-A5BE-40D9-A9E9-1992570B504D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC9E7940-A5BE-40D9-A9E9-1992570B504D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC9E7940-A5BE-40D9-A9E9-1992570B504D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3AF7B9B-3ED3-40B6-9B96-4AB7399CC344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3AF7B9B-3ED3-40B6-9B96-4AB7399CC344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3AF7B9B-3ED3-40B6-9B96-4AB7399CC344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3AF7B9B-3ED3-40B6-9B96-4AB7399CC344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCAA6BAF-F0C7-43AE-B046-7257CF337F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCAA6BAF-F0C7-43AE-B046-7257CF337F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCAA6BAF-F0C7-43AE-B046-7257CF337F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCAA6BAF-F0C7-43AE-B046-7257CF337F52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8866FB-30A0-410C-8F12-2ABAE1A800E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8866FB-30A0-410C-8F12-2ABAE1A800E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8866FB-30A0-410C-8F12-2ABAE1A800E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8866FB-30A0-410C-8F12-2ABAE1A800E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
