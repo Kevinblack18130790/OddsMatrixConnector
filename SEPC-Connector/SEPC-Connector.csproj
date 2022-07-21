@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\kacosta\Documents\GitHub\MoverV2\MoverDemonOddsMatrix\bin\Debug\SEPC-Connector.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E576754-5C12-40F0-90C8-3ADD8EA28095}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SEPC-Connector</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>com.oddsmatrix.sepc.connector</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="log4net">
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="util\GZipUtil.cs" />
+    <Compile Include="sportsmodel\BettingOffer.cs" />
+    <Compile Include="sportsmodel\BettingOfferStatus.cs" />
+    <Compile Include="sportsmodel\BettingOfferStatuses.cs" />
+    <Compile Include="sportsmodel\BettingType.cs" />
+    <Compile Include="sportsmodel\BettingTypeUsage.cs" />
+    <Compile Include="sportsmodel\Currency.cs" />
+    <Compile Include="sportsmodel\Entity.cs" />
+    <Compile Include="sportsmodel\EntityChange.cs" />
+    <Compile Include="sportsmodel\EntityChangeBatch.cs" />
+    <Compile Include="sportsmodel\EntityCreate.cs" />
+    <Compile Include="sportsmodel\EntityDelete.cs" />
+    <Compile Include="sportsmodel\EntityProperty.cs" />
+    <Compile Include="sportsmodel\EntityPropertyType.cs" />
+    <Compile Include="sportsmodel\EntityPropertyValue.cs" />
+    <Compile Include="sportsmodel\EntityType.cs" />
+    <Compile Include="sportsmodel\EntityTypes.cs" />
+    <Compile Include="sportsmodel\EntityUpdate.cs" />
+    <Compile Include="sportsmodel\Event.cs" />
+    <Compile Include="sportsmodel\EventAction.cs" />
+    <Compile Include="sportsmodel\EventActionDetail.cs" />
+    <Compile Include="sportsmodel\EventActionDetailStatus.cs" />
+    <Compile Include="sportsmodel\EventActionDetailStatuses.cs" />
+    <Compile Include="sportsmodel\EventActionDetailType.cs" />
+    <Compile Include="sportsmodel\EventActionDetailTypeUsage.cs" />
+    <Compile Include="sportsmodel\EventActionStatus.cs" />
+    <Compile Include="sportsmodel\EventActionStatuses.cs" />
+    <Compile Include="sportsmodel\EventActionType.cs" />
+    <Compile Include="sportsmodel\EventActionTypeUsage.cs" />
+    <Compile Include="sportsmodel\EventCategory.cs" />
+    <Compile Include="sportsmodel\EventInfo.cs" />
+    <Compile Include="sportsmodel\EventInfoStatus.cs" />
+    <Compile Include="sportsmodel\EventInfoStatuses.cs" />
+    <Compile Include="sportsmodel\EventInfoType.cs" />
+    <Compile Include="sportsmodel\EventInfoTypeUsage.cs" />
+    <Compile Include="sportsmodel\EventPart.cs" />
+    <Compile Include="sportsmodel\EventPartDefaultUsage.cs" />
+    <Compile Include="sportsmodel\EventParticipantInfo.cs" />
+    <Compile Include="sportsmodel\EventParticipantInfoDetail.cs" />
+    <Compile Include="sportsmodel\EventParticipantInfoDetailStatus.cs" />
+    <Compile Include="sportsmodel\EventParticipantInfoDetailStatuses.cs" />
+    <Compile Include="sportsmodel\EventParticipantInfoDetailType.cs" />
+    <Compile Include="sportsmodel\EventParticipantInfoDetailTypeUsage.cs" />
+    <Compile Include="sportsmodel\EventParticipantInfoStatus.cs" />
+    <Compile Include="sportsmodel\EventParticipantInfoStatuses.cs" />
+    <Compile Include="sportsmodel\EventParticipantInfoType.cs" />
+    <Compile Include="sportsmodel\EventParticipantInfoTypeUsage.cs" />
+    <Compile Include="sportsmodel\EventParticipantRelation.cs" />
+    <Compile Include="sportsmodel\EventParticipantRestriction.cs" />
+    <Compile Include="sportsmodel\EventStatus.cs" />
+    <Compile Include="sportsmodel\EventStatuses.cs" />
+    <Compile Include="sportsmodel\EventTemplate.cs" />
+    <Compile Include="sportsmodel\EventType.cs" />
+    <Compile Include="sportsmodel\EventTypes.cs" />
+    <Compile Include="sportsmodel\EventTypeUsage.cs" />
+    <Compile Include="sportsmodel\Language.cs" />
+    <Compile Include="sportsmodel\Location.cs" />
+    <Compile Include="sportsmodel\LocationRelation.cs" />
+    <Compile Include="sportsmodel\LocationRelationType.cs" />
+    <Compile Include="sportsmodel\LocationType.cs" />
+    <Compile Include="sportsmodel\LocationTypes.cs" />
+    <Compile Include="sportsmodel\Market.cs" />
+    <Compile Include="sportsmodel\MarketOutcomeRelation.cs" />
+    <Compile Include="sportsmodel\Outcome.cs" />
+    <Compile Include="sportsmodel\OutcomeParticipantRelation.cs" />
+    <Compile Include="sportsmodel\OutcomeStatus.cs" />
+    <Compile Include="sportsmodel\OutcomeStatuses.cs" />
+    <Compile Include="sportsmodel\OutcomeType.cs" />
+    <Compile Include="sportsmodel\OutcomeTypeBettingTypeRelation.cs" />
+    <Compile Include="sportsmodel\OutcomeTypeUsage.cs" />
+    <Compile Include="sportsmodel\Participant.cs" />
+    <Compile Include="sportsmodel\ParticipantRelation.cs" />
+    <Compile Include="sportsmodel\ParticipantRelationType.cs" />
+    <Compile Include="sportsmodel\ParticipantRole.cs" />
+    <Compile Include="sportsmodel\ParticipantRoles.cs" />
+    <Compile Include="sportsmodel\ParticipantType.cs" />
+    <Compile Include="sportsmodel\ParticipantTypeRoleUsage.cs" />
+    <Compile Include="sportsmodel\ParticipantUsage.cs" />
+    <Compile Include="sportsmodel\Provider.cs" />
+    <Compile Include="sportsmodel\ProviderEntityMapping.cs" />
+    <Compile Include="sportsmodel\ProviderEventRelation.cs" />
+    <Compile Include="sportsmodel\ScoringUnit.cs" />
+    <Compile Include="sportsmodel\Source.cs" />
+    <Compile Include="sportsmodel\Sport.cs" />
+    <Compile Include="sportsmodel\StreamingProvider.cs" />
+    <Compile Include="sportsmodel\StreamingProviderEventRelation.cs" />
+    <Compile Include="sportsmodel\Translation.cs" />
+    <Compile Include="sdql\IConnectorListener.cs" />
+    <Compile Include="sdql\IEntityChangeBatchProcessingMonitor.cs" />
+    <Compile Include="sdql\IStreamedConnectorListener.cs" />
+    <Compile Include="sdql\SDQLConstruct.cs" />
+    <Compile Include="sdql\SDQLEntityDeserializer.cs" />
+    <Compile Include="sdql\SDQLError.cs" />
+    <Compile Include="sdql\SDQLErrorException.cs" />
+    <Compile Include="sdql\SDQLInitialData.cs" />
+    <Compile Include="sdql\SDQLPingRequest.cs" />
+    <Compile Include="sdql\SDQLPingResponse.cs" />
+    <Compile Include="sdql\SDQLSubscribeRequest.cs" />
+    <Compile Include="sdql\SDQLSubscribeResponse.cs" />
+    <Compile Include="sdql\SDQLUnsubscribeRequest.cs" />
+    <Compile Include="sdql\SDQLUnsubscribeResponse.cs" />
+    <Compile Include="sdql\SDQLUpdateData.cs" />
+    <Compile Include="sdql\SDQLUpdateDataResumeRequest.cs" />
+    <Compile Include="sdql\SDQLXMLReaderUtil.cs" />
+    <Compile Include="sdql\SDQLXMLWriterUtil.cs" />
+    <Compile Include="sdql\SEPCConnector.cs" />
+    <Compile Include="sdql\SEPCConnectorStep.cs" />
+    <Compile Include="sdql\SEPCPushConnection.cs" />
+    <Compile Include="sdql\SEPCPushConnector.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
