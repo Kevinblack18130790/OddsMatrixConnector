@@ -9,5 +9,6 @@ namespace OddsMatrixConnector.API.Controllers
 {
     public class SyncServiceController : ApiController
     {
+
     }
 }

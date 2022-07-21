@@ -27,6 +27,8 @@ Port: 7000
 
         public static void Main()
         {
+            string tablees = SQLScriptClass.GetTables();
+
             connector = new SEPCPushConnector("sept.oddsmatrix.com", 7000);
             connector.AddStreamedConnectorListener(new CustomListener());
             connector.SetEntityChangeBatchProcessingMonitor(new Monitor());
