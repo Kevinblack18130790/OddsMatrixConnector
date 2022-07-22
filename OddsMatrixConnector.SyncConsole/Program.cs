@@ -3,6 +3,7 @@ using com.oddsmatrix.sepc.connector.sportsmodel;
 using OddsMatrixConnector.BL;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,7 @@ using System.Threading.Tasks;
 
 namespace OddsMatrixConnector.SyncConsole
 {
-    /*
-     Your subscription named Guillermo_bet is open
-Host: sept.oddsmatrix.com
-Port: 7000
-     */
+
     internal class Program
     {
         private static SEPCPushConnector connector;
@@ -23,13 +20,13 @@ Port: 7000
         private static Dictionary<long, BettingOffer> bettingOffers = new Dictionary<long, BettingOffer>();
         private static string suscriptorId = "";
         private static string checksum = "";
-        private static string suscriptorName = "iBet";
+        private static string suscriptorName = ConfigurationManager.AppSettings["suscriptorname"];
 
         public static void Main()
         {
             string tablees = SQLScriptClass.GetTables();
 
-            connector = new SEPCPushConnector("sept.oddsmatrix.com", 7000);
+            connector = new SEPCPushConnector(ConfigurationManager.AppSettings["host"], int.Parse(ConfigurationManager.AppSettings["port"]));
             connector.AddStreamedConnectorListener(new CustomListener());
             connector.SetEntityChangeBatchProcessingMonitor(new Monitor());
             start = DateTime.Now;
