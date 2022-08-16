@@ -26,6 +26,8 @@ namespace OddsMatrixConnector.SyncConsole
         {
             string tablees = SQLScriptClass.GetTables();
 
+            string methods = SQLScriptClass.GetMethod();
+
             connector = new SEPCPushConnector(ConfigurationManager.AppSettings["host"], int.Parse(ConfigurationManager.AppSettings["port"]));
             connector.AddStreamedConnectorListener(new CustomListener());
             connector.SetEntityChangeBatchProcessingMonitor(new Monitor());

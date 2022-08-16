@@ -134,5 +134,161 @@ namespace OddsMatrixConnector.BL
                 default: { return $"varchar(50)"; }
             }
         }
+
+        public static string GetMethod()
+        {
+            StringBuilder values = new StringBuilder();
+            values.AppendLine(CreateMethod<BettingOffer>());
+            values.AppendLine(CreateMethod<BettingOfferStatus>());
+            values.AppendLine(CreateMethod<BettingType>());
+            values.AppendLine(CreateMethod<BettingTypeUsage>());
+            values.AppendLine(CreateMethod<Currency>());
+            values.AppendLine(CreateMethod<EntityProperty>());
+            values.AppendLine(CreateMethod<EntityPropertyType>());
+            values.AppendLine(CreateMethod<EntityPropertyValue>());
+            values.AppendLine(CreateMethod<EntityType>());
+            values.AppendLine(CreateMethod<Event>());
+            values.AppendLine(CreateMethod<EventAction>());
+            values.AppendLine(CreateMethod<EventActionDetail>());
+            values.AppendLine(CreateMethod<EventActionDetailStatus>());
+            values.AppendLine(CreateMethod<EventActionDetailType>());
+            values.AppendLine(CreateMethod<EventActionDetailTypeUsage>());
+            values.AppendLine(CreateMethod<EventActionStatus>());
+            values.AppendLine(CreateMethod<EventActionType>());
+            values.AppendLine(CreateMethod<EventActionTypeUsage>());
+            values.AppendLine(CreateMethod<EventCategory>());
+            values.AppendLine(CreateMethod<EventInfo>());
+            values.AppendLine(CreateMethod<EventInfoStatus>());
+            values.AppendLine(CreateMethod<EventInfoType>());
+            values.AppendLine(CreateMethod<EventInfoTypeUsage>());
+            values.AppendLine(CreateMethod<EventPart>());
+            values.AppendLine(CreateMethod<EventPartDefaultUsage>());
+            values.AppendLine(CreateMethod<EventParticipantInfo>());
+            values.AppendLine(CreateMethod<EventParticipantInfoDetail>());
+            values.AppendLine(CreateMethod<EventParticipantInfoDetailStatus>());
+            values.AppendLine(CreateMethod<EventParticipantInfoDetailType>());
+            values.AppendLine(CreateMethod<EventParticipantInfoDetailTypeUsage>());
+            values.AppendLine(CreateMethod<EventParticipantInfoStatus>());
+            values.AppendLine(CreateMethod<EventParticipantInfoType>());
+            values.AppendLine(CreateMethod<EventParticipantInfoTypeUsage>());
+            values.AppendLine(CreateMethod<EventParticipantRelation>());
+            values.AppendLine(CreateMethod<EventParticipantRestriction>());
+            values.AppendLine(CreateMethod<EventStatus>());
+            values.AppendLine(CreateMethod<EventTemplate>());
+            values.AppendLine(CreateMethod<EventType>());
+            values.AppendLine(CreateMethod<EventTypeUsage>());
+            values.AppendLine(CreateMethod<Language>());
+            values.AppendLine(CreateMethod<Location>());
+            values.AppendLine(CreateMethod<LocationRelation>());
+            values.AppendLine(CreateMethod<LocationRelationType>());
+            values.AppendLine(CreateMethod<LocationType>());
+            values.AppendLine(CreateMethod<Market>());
+            values.AppendLine(CreateMethod<MarketOutcomeRelation>());
+            values.AppendLine(CreateMethod<Outcome>());
+            values.AppendLine(CreateMethod<OutcomeParticipantRelation>());
+            values.AppendLine(CreateMethod<OutcomeStatus>());
+            values.AppendLine(CreateMethod<OutcomeType>());
+            values.AppendLine(CreateMethod<OutcomeTypeBettingTypeRelation>());
+            values.AppendLine(CreateMethod<OutcomeTypeUsage>());
+            values.AppendLine(CreateMethod<Participant>());
+            values.AppendLine(CreateMethod<ParticipantRelation>());
+            values.AppendLine(CreateMethod<ParticipantRelationType>());
+            values.AppendLine(CreateMethod<ParticipantRole>());
+            values.AppendLine(CreateMethod<ParticipantType>());
+            values.AppendLine(CreateMethod<ParticipantTypeRoleUsage>());
+            values.AppendLine(CreateMethod<ParticipantUsage>());
+            values.AppendLine(CreateMethod<Provider>());
+            values.AppendLine(CreateMethod<ProviderEntityMapping>());
+            values.AppendLine(CreateMethod<ProviderEventRelation>());
+            values.AppendLine(CreateMethod<ScoringUnit>());
+            values.AppendLine(CreateMethod<Source>());
+            values.AppendLine(CreateMethod<Sport>());
+            values.AppendLine(CreateMethod<StreamingProvider>());
+            values.AppendLine(CreateMethod<StreamingProviderEventRelation>());
+            values.AppendLine(CreateMethod<Translation>());
+            return values.ToString();
+        }
+
+        private static string CreateMethod<T>() where T : class
+        {
+            Type methodName = typeof(T);
+            string method = "";
+
+            //method += $"private static void AddListDB(this List<{methodName.Name}> entities)"+Environment.NewLine;
+            //method += "{" + Environment.NewLine;
+            //method += $"    try                                                         " + Environment.NewLine;
+            //method += "    {" + Environment.NewLine;
+            //method += $"        using (var context = new OddMatrixDataDataContext())" + Environment.NewLine;
+            //method += "        {" + Environment.NewLine;
+            //method += $"            List<{methodName.Name}> currentInfo = context.{methodName.Name}s.ToList();  " + Environment.NewLine;
+            //method += $"            context.{methodName.Name}s.DeleteAllOnSubmit(currentInfo);  " + Environment.NewLine;
+            //method += $"            context.{methodName.Name}s.InsertAllOnSubmit(entities);  " + Environment.NewLine;
+            //method += $"            context.SubmitChanges();" + Environment.NewLine;
+            //method += "        }" + Environment.NewLine;
+            //method += "    }" + Environment.NewLine;
+            //method += $"    catch (Exception ex)                                        " + Environment.NewLine;
+            //method += "    {" + Environment.NewLine;
+            //method += "        throw new Exception($\""+methodName.Name+":{ex.Message}\");" + Environment.NewLine;
+            //method += "    }" + Environment.NewLine;
+            //method += "}" + Environment.NewLine;
+
+            //method += $"case \"{methodName.Name}\":" + Environment.NewLine;
+            //method += "{" + Environment.NewLine;
+            //method += $"  return  JsonConvert.DeserializeObject<List<{methodName.Name}>>(json);" + Environment.NewLine;
+            //method += "}";
+
+            //method += $"case \"{methodName.Name}\":" + Environment.NewLine;
+            //method += "{" + Environment.NewLine;
+            //method += $"list{methodName.Name}.AddRange((IEnumerable<SEPC_BD.{methodName.Name}>)entities);" + Environment.NewLine;
+            //method += $"break;" + Environment.NewLine;
+            //method += "}";
+
+            //method += $"public static List<{methodName.Name}> TransformEntitiesTo{methodName.Name}(this List<Entity> entities)" + Environment.NewLine;
+            //method += "{" + Environment.NewLine;
+            //method += "     string json = JsonConvert.SerializeObject(entities);" + Environment.NewLine;
+            //method += $"    return JsonConvert.DeserializeObject<List<{methodName.Name}>>(json);" + Environment.NewLine;
+            //method += "}" + Environment.NewLine;
+
+            //method += $"list{methodName.Name}.AddListDB();";
+
+            //method += $"case \"{methodName.Name}\":" + Environment.NewLine;
+            //method += "{" + Environment.NewLine;
+            //method += $"list{methodName.Name}.AddRange(entities.TransformEntitiesTo{methodName.Name}());" + Environment.NewLine;
+            //method += $"break;" + Environment.NewLine;
+            //method += "}";
+
+            //method += $"            List<{methodName.Name}> currentInfo{methodName.Name} = context.{methodName.Name}s.ToList();  " + Environment.NewLine;
+            //method += $"            context.{methodName.Name}s.DeleteAllOnSubmit(currentInfo{methodName.Name});  ";
+
+            //method += $"private static void AddListDB(this List<{methodName.Name}> entities)" + Environment.NewLine;
+            //method += "{" + Environment.NewLine;
+            //method += $"    try                                                         " + Environment.NewLine;
+            //method += "    {" + Environment.NewLine;
+            //method += $"        using (var context = new OddMatrixDataDataContext())" + Environment.NewLine;
+            //method += "        {" + Environment.NewLine;
+            //method += $"            context.{methodName.Name}s.InsertAllOnSubmit(entities);  " + Environment.NewLine;
+            //method += $"            context.SubmitChanges();" + Environment.NewLine;
+            //method += "        }" + Environment.NewLine;
+            //method += "    }" + Environment.NewLine;
+            //method += $"    catch (Exception ex)                                        " + Environment.NewLine;
+            //method += "    {" + Environment.NewLine;
+            //method += "        throw new Exception($\"" + methodName.Name + ":{ex.Message}\");" + Environment.NewLine;
+            //method += "    }" + Environment.NewLine;
+            //method += "}" + Environment.NewLine;
+
+            //method += $"TRUNCATE TABLE [{methodName.Name}];";
+
+            //method += $"case \"{methodName.Name}\":" + Environment.NewLine;
+            //method += "{" + Environment.NewLine;
+            //method += $"JsonConvert.DeserializeObject<List<{methodName.Name}>>(json).AddListDB<{methodName.Name}>();" + Environment.NewLine;
+            //method += "break;" + Environment.NewLine;
+            //method += "}";
+
+            //method += $"list{methodName.Name}.AddListDB<{methodName.Name}>();";
+
+            method += $"List<Entity> list{methodName.Name} = new List<Entity>();";
+
+            return method.Replace("ss.","s.").Replace("ys.","ies.");
+        }
     }
 }
