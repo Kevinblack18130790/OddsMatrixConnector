@@ -286,8 +286,22 @@ namespace OddsMatrixConnector.BL
 
             //method += $"list{methodName.Name}.AddListDB<{methodName.Name}>();";
 
-            method += $"List<Entity> list{methodName.Name} = new List<Entity>();";
+            //method += $"List<Entity> list{methodName.Name} = new List<Entity>();";
 
+            //method += $"List{methodName.Name}.TransformEntities();";
+
+            //method += $"case \"{methodName.Name}\":" + Environment.NewLine;
+            //method += "{" + Environment.NewLine;
+            //method += $"List{methodName.Name}.AddRange(entities);" + Environment.NewLine;
+            //method += "break;" + Environment.NewLine;
+            //method += "}";
+
+            //method += $"ALTER TABLE {methodName.Name} drop column EntityType" + Environment.NewLine;
+            //method += $"ALTER TABLE {methodName.Name} ADD LastModification datetime" + Environment.NewLine;
+
+            //method += $"ALTER TABLE {methodName.Name} drop column DateCreated" + Environment.NewLine;
+            method += $"ALTER TABLE {methodName.Name} ADD EntityType varchar(200)" + Environment.NewLine;
+            
             return method.Replace("ss.","s.").Replace("ys.","ies.");
         }
     }
